@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <rsgitech_news> <!-- section in system.xml file -->
+            <general> <!-- group id in system.xml -->
+                <enable>1</enable> <!-- select 1 for(YES) value... field id of group in system.xml file  -->
+            </general>
+            <storefront>
+            	<news_link>Latest News</news_link>
+            	<set_limit>10</set_limit>
+            </storefront>
+        </rsgitech_news>
+    </default>
+</config>
+
+<!-- to set default value in system configuration
+	 by default selected value  -->

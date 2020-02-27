@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+        <menu>
+        	<!-- <add id="Rsgitech_News::rsgitech" title="RSGiTECH" translate="title" module="Rsgitech_News" sortOrder="90" resource="Rsgitech_News::news" />
+
+        	<add id="Rsgitech_News::news" title="News" translate="title" module="Rsgitech_News" sortOrder="50" resource="Rsgitech_News::news"/>
+
+        	<add id="Rsgitech_News::news_allnews" title="All News" translate="title" module="Rsgitech_News" sortOrder="10" parent="Rsgitech_News::news" action="news/allnews" resource="Rsgitech_News::news" /> -->
+
+
+        	<add id="Rsgitech_News::rsgitech"
+             title="Hushain"
+             module="Rsgitech_News"
+             sortOrder="20"
+             resource="Rsgitech_News::news" />
+ 			
+ 			 <add id="Rsgitech_News::news"
+             title="News"
+             module="Rsgitech_News"
+             sortOrder="1"
+             parent="Rsgitech_News::rsgitech"
+             resource="Rsgitech_News::news" />
+
+        	<add id="Rsgitech_News::news_allnews"
+             title="All News"
+             module="Rsgitech_News"
+             sortOrder="1"
+             action="news/allnews"
+             parent="Rsgitech_News::news"
+             resource="Rsgitech_News::news" />
+
+             <add id="Rsgitech_News::settings"
+             title="Settings"
+             module="Rsgitech_News"
+             sortOrder="1"
+             parent="Rsgitech_News::rsgitech"
+             resource="Rsgitech_News::settings" />
+
+        	<add id="Rsgitech_News::news_config"
+             title="Configuration"
+             module="Rsgitech_News"
+             sortOrder="1"
+             action="admin/system_config/edit/section/rsgitech_news"
+             parent="Rsgitech_News::settings"
+             resource="Rsgitech_News::news_config" />
+
+        </menu>
+</config>
